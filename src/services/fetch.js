@@ -12,10 +12,10 @@ async function darDatosConsulta(obj) {
             throw new Error(`Error en la solicitud POST: ${respuesta.statusText}`);
         }
         const data = await respuesta.json();
-        console.log(data);
+        // console.log(data);
         return data;
     } catch (error) {
-        console.error("Error en darDatos:", error);
+        console.error( error);
         return null;
     }
 }

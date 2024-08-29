@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"28ufS":[function(require,module,exports) {
+})({"32oy4":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "e513988d127b065a";
+module.bundle.HMR_BUNDLE_ID = "9efd0f92ebe4f628";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -583,30 +583,83 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"2PDYX":[function(require,module,exports) {
+},{}],"iJn07":[function(require,module,exports) {
 var _fetch = require("../services/fetch");
-document.getElementById("ingresar").addEventListener("click", async (e)=>{
-    e.preventDefault();
-    const nombre = document.getElementById("nombre").value.trim();
-    const correo = document.getElementById("correo").value.trim();
-    const clave = document.getElementById("clave").value.trim();
-    const codigo = document.getElementById("codigo").value.trim();
-    if (!nombre || !correo || !clave || !codigo) {
+const estadisticas = document.getElementById("estadisticas");
+let guardarConsultas = document.getElementById("guardarconsultas");
+let consultasContainer = document.getElementById("consultas-container");
+let listaConsultas = JSON.parse(localStorage.getItem("ListaConsultas")) || [];
+// Función para mostrar las consultas
+function mostrarConsultas() {
+    // Limpiar el contenedor
+    consultasContainer.innerHTML = "";
+    // Obtener la plantilla
+    let template = document.getElementById("consulta-template");
+    // Recorrer la lista de consultas y crear elementos para cada una
+    listaConsultas.forEach((consulta)=>{
+        // Clonar el contenido de la plantilla
+        let consultaElement = document.importNode(template.content, true);
+        // Rellenar el contenido de la plantilla
+        consultaElement.querySelector(".nombre").textContent = consulta.nombre;
+        consultaElement.querySelector(".tipoconsulta").textContent = consulta.tipoConsulta;
+        consultaElement.querySelector(".consulta").textContent = consulta.consultas;
+        consultaElement.querySelector(".fecha").textContent = consulta.fecha;
+        consultaElement.querySelector(".time").textContent = consulta.time;
+        // Añadir el elemento al contenedor
+        consultasContainer.appendChild(consultaElement);
+    });
+}
+// Manejar el evento de clic en el botón
+guardarConsultas.addEventListener("click", async ()=>{
+    let inputNombre = document.getElementById("inputnombre").value;
+    let select = document.getElementById("select").value;
+    let inputConsultas = document.getElementById("inputconsulta").value;
+    let inputFecha = document.getElementById("inputfecha").value;
+    let inputTime = document.getElementById("inputtime").value;
+    if (inputNombre === "" || inputConsultas === "" || inputFecha === "" || inputTime === "" || select === "") {
         alert("Rellene todos los espacios");
-        return;
+        return; // Termina la función si algún campo está vacío
     }
-    try {
-        const usuarios = await (0, _fetch.getDatos)();
-        const usuarioValido = usuarios.find((usuario)=>usuario.inputNombre === nombre && usuario.inputCorreo === correo && usuario.inputContra === clave && usuario.inputID === codigo);
-        if (usuarioValido) {
-            alert("Inicio de sesi\xf3n exitoso!");
-            window.location.href = "consultas.html";
-        } else alert("Nombre de usuario, correo o contrase\xf1a incorrectos.");
-    } catch (error) {
-        console.error("Error durante el inicio de sesi\xf3n:", error);
-        alert("Hubo un problema al procesar el inicio de sesi\xf3n. Int\xe9ntelo de nuevo.");
-    }
+    // 
+    let nuevaConsulta = {
+        nombre: inputNombre,
+        tipoConsulta: select,
+        consultas: inputConsultas,
+        fecha: inputFecha,
+        time: inputTime
+    };
+    listaConsultas.push(nuevaConsulta);
+    localStorage.setItem("ListaConsultas", JSON.stringify(listaConsultas));
+    await (0, _fetch.darDatosConsulta)(nuevaConsulta);
+    // Limpiar los inputs
+    document.getElementById("inputnombre").value = "";
+    document.getElementById("select").value = "";
+    document.getElementById("inputconsulta").value = "";
+    document.getElementById("inputfecha").value = "";
+    document.getElementById("inputtime").value = "";
 });
+// Mostrar las consultas al cargar la página
+mostrarConsultas();
+estadisticas.addEventListener("click", function() {
+    window.location.href = "estadisticas.html";
+}) // let inputNombre = document.getElementById("inputnombre").value;
+ // let inputConsultas = document.getElementById("inputconsulta").value;
+ // let inputFecha = document.getElementById("inputfecha").valuinpute;
+ // if (inputNombre === '' || inputConsultas === '' || inputFecha === '') {
+ //     alert("Rellene todos los espacios");
+ //     return; // Termina la función si algún campo está vacío
+ // }
+ // let nuevaConsulta = { 
+ //     nombre: inputNombre,
+ //      consultas: inputConsultas,
+ //      fecha: inputFecha,
+ //     };
+ //     listaConsultas.push(nuevaConsulta);
+ // localStorage.setItem("ListaConsultas", JSON.stringify(listaConsultas));
+ // document.getElementById("inputnombre").value = ''; // Limpiar input
+ // document.getElementById("inputconsulta").value = ''; // Limpiar input
+ // document.getElementById("inputfecha").value = ''; // Limpiar input
+;
 
 },{"../services/fetch":"hXoqP"}],"hXoqP":[function(require,module,exports) {
 // POST
@@ -725,6 +778,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["28ufS","2PDYX"], "2PDYX", "parcelRequire94c2")
+},{}]},["32oy4","iJn07"], "iJn07", "parcelRequire94c2")
 
-//# sourceMappingURL=login.127b065a.js.map
+//# sourceMappingURL=consultas.ebe4f628.js.map

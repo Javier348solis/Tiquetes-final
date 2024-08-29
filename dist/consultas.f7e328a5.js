@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"28ufS":[function(require,module,exports) {
+})({"jCxou":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "e513988d127b065a";
+module.bundle.HMR_BUNDLE_ID = "365d8b2bf7e328a5";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -583,148 +583,8 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"2PDYX":[function(require,module,exports) {
-var _fetch = require("../services/fetch");
-document.getElementById("ingresar").addEventListener("click", async (e)=>{
-    e.preventDefault();
-    const nombre = document.getElementById("nombre").value.trim();
-    const correo = document.getElementById("correo").value.trim();
-    const clave = document.getElementById("clave").value.trim();
-    const codigo = document.getElementById("codigo").value.trim();
-    if (!nombre || !correo || !clave || !codigo) {
-        alert("Rellene todos los espacios");
-        return;
-    }
-    try {
-        const usuarios = await (0, _fetch.getDatos)();
-        const usuarioValido = usuarios.find((usuario)=>usuario.inputNombre === nombre && usuario.inputCorreo === correo && usuario.inputContra === clave && usuario.inputID === codigo);
-        if (usuarioValido) {
-            alert("Inicio de sesi\xf3n exitoso!");
-            window.location.href = "consultas.html";
-        } else alert("Nombre de usuario, correo o contrase\xf1a incorrectos.");
-    } catch (error) {
-        console.error("Error durante el inicio de sesi\xf3n:", error);
-        alert("Hubo un problema al procesar el inicio de sesi\xf3n. Int\xe9ntelo de nuevo.");
-    }
-});
+},{}],"kdwXh":[function(require,module,exports) {
 
-},{"../services/fetch":"hXoqP"}],"hXoqP":[function(require,module,exports) {
-// POST
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "darDatosConsulta", ()=>darDatosConsulta);
-parcelHelpers.export(exports, "getDatos", ()=>getDatos);
-parcelHelpers.export(exports, "getDatosConsul", ()=>getDatosConsul);
-parcelHelpers.export(exports, "eliminarLista", ()=>eliminarLista);
-parcelHelpers.export(exports, "actualizarLista", ()=>actualizarLista);
-async function darDatosConsulta(obj) {
-    try {
-        const respuesta = await fetch("http://localhost:3002/consultas", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json; charset=UTF-8"
-            },
-            body: JSON.stringify(obj)
-        });
-        if (!respuesta.ok) throw new Error(`Error en la solicitud POST: ${respuesta.statusText}`);
-        const data = await respuesta.json();
-        // console.log(data);
-        return data;
-    } catch (error) {
-        console.error(error);
-        return null;
-    }
-}
-// GET
-async function getDatos() {
-    try {
-        const response = await fetch("http://localhost:3002/users");
-        if (!response.ok) throw new Error(`Error fetching users: ${response.statusText}`);
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error("Error fetching users:", error);
-        return [];
-    }
-}
-// GET consultas
-async function getDatosConsul() {
-    try {
-        const response = await fetch("http://localhost:3002/consultas");
-        if (!response.ok) throw new Error(`Error fetching users: ${response.statusText}`);
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error("Error fetching users:", error);
-        return [];
-    }
-}
-// DELETE
-async function eliminarLista(id) {
-    try {
-        const response = await fetch(`http://localhost:3002/consultas/${id}`, {
-            method: "DELETE",
-            headers: {
-                "Content-Type": "application/json"
-            }
-        });
-        if (!response.ok) throw new Error(`Error en la solicitud DELETE: ${response.statusText}`);
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error("Error en eliminarLista:", error);
-        return null;
-    }
-}
-// PUT
-async function actualizarLista(obj) {
-    try {
-        const response = await fetch("http://localhost:3002/users", {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(obj)
-        });
-        if (!response.ok) throw new Error(`Error en la solicitud PUT: ${response.statusText}`);
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error("Error en actualizarLista:", error);
-        return null;
-    }
-}
+},{}]},["jCxou","kdwXh"], "kdwXh", "parcelRequire94c2")
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}]},["28ufS","2PDYX"], "2PDYX", "parcelRequire94c2")
-
-//# sourceMappingURL=login.127b065a.js.map
+//# sourceMappingURL=consultas.f7e328a5.js.map

@@ -51,7 +51,8 @@ guardarConsultas.addEventListener("click", async() => {
         fecha: inputFecha,
         time: inputTime
     };
-
+    listaConsultas.push(nuevaConsulta);
+    localStorage.setItem("ListaConsultas", JSON.stringify(listaConsultas));
     await darDatosConsulta(nuevaConsulta)
     // Limpiar los inputs
     document.getElementById("inputnombre").value = '';

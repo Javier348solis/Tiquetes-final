@@ -3,6 +3,6 @@
     "parcel": "^2.12.0"
   },
   "scripts": {
-    "start": "parcel src/html/consultas.html"
+    "start": "parcel src/html/login.html"
   }
 }

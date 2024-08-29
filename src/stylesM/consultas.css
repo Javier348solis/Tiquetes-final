@@ -11,15 +11,15 @@
 }
 
 .nombre{
-    background-color: aqua;
+    background-color: rgb(151, 252, 252);
 }
 
 .tipoconsulta{
-    background-color: blueviolet;
+    background-color: rgb(222, 201, 241);
 }
 
 .consulta{
-    background-color: brown;
+    background-color: rgb(182, 213, 227);
 }
 
 .fecha{

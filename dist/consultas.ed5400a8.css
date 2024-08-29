@@ -1,0 +1,35 @@
+.consulta-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.consulta-item p {
+  margin: 5px 0;
+}
+
+.nombre {
+  background-color: #97fcfc;
+}
+
+.tipoconsulta {
+  background-color: #dec9f1;
+}
+
+.consulta {
+  background-color: #b6d5e3;
+}
+
+.fecha {
+  background-color: #7fff00;
+}
+
+.time {
+  background-color: #e9967a;
+}
+
+#guardarconsultas {
+  background-color: #9400d3;
+}
+/*# sourceMappingURL=consultas.ed5400a8.css.map */

@@ -1,43 +1,75 @@
 {
-    "users":[
-        {
-        "id": "d1bb",
-        "inputNombre": "Moha",
-        "inputCorreo": "moha@.com",
-        "inputContra": "1234",
-        "inputID": "1234"
-        },
-        {
-        "id": "54c5",
-        "inputNombre": "Javier Solis Retana",
-        "inputCorreo": "jaso12@gmail.com",
-        "inputContra": "1234",
-        "inputID": "1234"
-        },
-        {
-        "id": "fc85",
-        "inputNombre": "Pepe",
-        "inputCorreo": "pepinbananin@gmail.com",
-        "inputContra": "6969",
-        "inputID": "1"
-        }
-    ],
-    "consultas": [
-        {
-        "id": "57f3",
-        "nombre": "b",
-        "tipoConsulta": "Justificar Ausencia",
-        "consultas": "b",
-        "fecha": "2020-02-20",
-        "time": "20:20"
-        },
-        {
-        "id": "ab37",
-        "nombre": "Moha",
-        "tipoConsulta": "Permiso de Salida",
-        "consultas": "12",
-        "fecha": "2020-02-12",
-        "time": "02:20"
-        }
-    ]
+  "users": [
+    {
+      "id": "d1bb",
+      "inputNombre": "Moha",
+      "inputCorreo": "moha@.com",
+      "inputContra": "1234",
+      "inputID": "1234"
+    },
+    {
+      "id": "54c5",
+      "inputNombre": "Javier Solis Retana",
+      "inputCorreo": "jaso12@gmail.com",
+      "inputContra": "1234",
+      "inputID": "1234"
+    },
+    {
+      "id": "fc85",
+      "inputNombre": "Pepe",
+      "inputCorreo": "pepinbananin@gmail.com",
+      "inputContra": "6969",
+      "inputID": "1"
+    }
+  ],
+  "consultas": [
+    {
+      "id": "57f3",
+      "nombre": "b",
+      "tipoConsulta": "Justificar Ausencia",
+      "consultas": "b",
+      "fecha": "2020-02-20",
+      "time": "20:20"
+    },
+    {
+      "id": "ab37",
+      "nombre": "Moha",
+      "tipoConsulta": "Permiso de Salida",
+      "consultas": "12",
+      "fecha": "2020-02-12",
+      "time": "02:20"
+    },
+    {
+      "id": "a11c",
+      "nombre": "michelle",
+      "tipoConsulta": "Permiso de Salida",
+      "consultas": "ya pasaron asistencia",
+      "fecha": "2024-08-23",
+      "time": "13:09"
+    },
+    {
+      "id": "36d5",
+      "nombre": "maria lopez ",
+      "tipoConsulta": "Justificar Ausencia",
+      "consultas": "asdfghjk",
+      "fecha": "2024-08-02",
+      "time": "13:11"
+    },
+    {
+      "id": "49bd",
+      "nombre": "wen",
+      "tipoConsulta": "Trabajar desde Casa",
+      "consultas": "puedo trabajar desde caassa",
+      "fecha": "2024-08-30",
+      "time": "13:13"
+    },
+    {
+      "id": "8067",
+      "nombre": "michelle",
+      "tipoConsulta": "Solicitar el Desglose",
+      "consultas": "me pueden dar el desglose del proyecto",
+      "fecha": "2024-08-29",
+      "time": "13:16"
+    }
+  ]
 }
