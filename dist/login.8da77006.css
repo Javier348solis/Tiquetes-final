@@ -1,2 +1,42 @@
+body {
+  background-color: #a59a9a;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
 
+.container {
+  background: #cbbdbd;
+  border-radius: 8px;
+  padding: 70px;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.container input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.container button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
 /*# sourceMappingURL=login.8da77006.css.map */

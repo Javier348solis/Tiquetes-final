@@ -1,38 +1,36 @@
+import { getDatos } from "../services/fetch";
 
-let ingresar = document.getElementById("ingresar");
-
-ingresar.addEventListener("click", async (e) => {
+document.getElementById("ingresar").addEventListener("click", async (e) => {
     e.preventDefault();
-    
-    let nombre = document.getElementById("nombre").value;
-    let correo = document.getElementById("correo").value;
-    let clave = document.getElementById("clave").value;
 
+    const nombre = document.getElementById("nombre").value.trim();
+    const correo = document.getElementById("correo").value.trim();
+    const clave = document.getElementById("clave").value.trim();
+    const codigo = document.getElementById("codigo").value.trim();
 
-    if (nombre === '' || correo === '' || clave === '') {
+    if (!nombre || !correo || !clave || !codigo) {
         alert("Rellene todos los espacios");
-        return; // Termina la función si algún campo está vacío
+        return; 
     }
 
-    // Obtiene los datos de los usuarios
-    const usuarios = await getDatos();
+    try {
+        const usuarios = await getDatos();
 
-    // Verifica si el usuario ingresado coincide
-    // find o some
-    const usuarioValido = usuarios.find(usuario =>
-        usuario.nombre === nombre &&
-        usuario.correo === correo &&
-        usuario.clave === clave
-    );
-        
-        
+        const usuarioValido = usuarios.find(usuario =>
+            usuario.inputNombre === nombre && 
+            usuario.inputCorreo === correo &&
+            usuario.inputContra === clave &&
+            usuario.inputID === codigo
+        );
+
         if (usuarioValido) {
             alert('Inicio de sesión exitoso!');
-            // window.location.href = 'src/html/consultas.html'
+            window.location.href= "consultas.html"
         } else {
-            // console.log('izquierda.......usuario '+usuarios.nombre+' correo '+usuarios.clave+" clave ");
-            console.log('izquierda.......usuario '+nombre+' clave '+clave+" correo "+ correo);
             alert('Nombre de usuario, correo o contraseña incorrectos.');
         }
-
+    } catch (error) {
+        console.error('Error durante el inicio de sesión:', error);
+        alert('Hubo un problema al procesar el inicio de sesión. Inténtelo de nuevo.');
+    }
 });

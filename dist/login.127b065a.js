@@ -584,28 +584,146 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"2PDYX":[function(require,module,exports) {
-let ingresar = document.getElementById("ingresar");
-ingresar.addEventListener("click", async (e)=>{
+var _fetch = require("../services/fetch");
+document.getElementById("ingresar").addEventListener("click", async (e)=>{
     e.preventDefault();
-    let nombre = document.getElementById("nombre").value;
-    let correo = document.getElementById("correo").value;
-    let clave = document.getElementById("clave").value;
-    if (nombre === "" || correo === "" || clave === "") {
+    const nombre = document.getElementById("nombre").value.trim();
+    const correo = document.getElementById("correo").value.trim();
+    const clave = document.getElementById("clave").value.trim();
+    const codigo = document.getElementById("codigo").value.trim();
+    if (!nombre || !correo || !clave || !codigo) {
         alert("Rellene todos los espacios");
-        return; // Termina la función si algún campo está vacío
+        return;
     }
-    // Obtiene los datos de los usuarios
-    const usuarios = await getDatos();
-    // Verifica si el usuario ingresado coincide
-    // find o some
-    const usuarioValido = usuarios.find((usuario)=>usuario.nombre === nombre && usuario.correo === correo && usuario.clave === clave);
-    if (usuarioValido) alert("Inicio de sesi\xf3n exitoso!");
-    else {
-        // console.log('izquierda.......usuario '+usuarios.nombre+' correo '+usuarios.clave+" clave ");
-        console.log("izquierda.......usuario " + nombre + " clave " + clave + " correo " + correo);
-        alert("Nombre de usuario, correo o contrase\xf1a incorrectos.");
+    try {
+        const usuarios = await (0, _fetch.getDatos)();
+        const usuarioValido = usuarios.find((usuario)=>usuario.inputNombre === nombre && usuario.inputCorreo === correo && usuario.inputContra === clave && usuario.inputID === codigo);
+        if (usuarioValido) {
+            alert("Inicio de sesi\xf3n exitoso!");
+            window.location.href = "consultas.html";
+        } else alert("Nombre de usuario, correo o contrase\xf1a incorrectos.");
+    } catch (error) {
+        console.error("Error durante el inicio de sesi\xf3n:", error);
+        alert("Hubo un problema al procesar el inicio de sesi\xf3n. Int\xe9ntelo de nuevo.");
     }
 });
+
+},{"../services/fetch":"hXoqP"}],"hXoqP":[function(require,module,exports) {
+// POST
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "darDatosConsulta", ()=>darDatosConsulta);
+parcelHelpers.export(exports, "getDatos", ()=>getDatos);
+parcelHelpers.export(exports, "getDatosConsul", ()=>getDatosConsul);
+parcelHelpers.export(exports, "eliminarLista", ()=>eliminarLista);
+parcelHelpers.export(exports, "actualizarLista", ()=>actualizarLista);
+async function darDatosConsulta(obj) {
+    try {
+        const respuesta = await fetch("http://localhost:3002/consultas", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json; charset=UTF-8"
+            },
+            body: JSON.stringify(obj)
+        });
+        if (!respuesta.ok) throw new Error(`Error en la solicitud POST: ${respuesta.statusText}`);
+        const data = await respuesta.json();
+        console.log(data);
+        return data;
+    } catch (error) {
+        console.error("Error en darDatos:", error);
+        return null;
+    }
+}
+// GET
+async function getDatos() {
+    try {
+        const response = await fetch("http://localhost:3002/users");
+        if (!response.ok) throw new Error(`Error fetching users: ${response.statusText}`);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Error fetching users:", error);
+        return [];
+    }
+}
+// GET consultas
+async function getDatosConsul() {
+    try {
+        const response = await fetch("http://localhost:3002/consultas");
+        if (!response.ok) throw new Error(`Error fetching users: ${response.statusText}`);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Error fetching users:", error);
+        return [];
+    }
+}
+// DELETE
+async function eliminarLista(id) {
+    try {
+        const response = await fetch(`http://localhost:3002/consultas/${id}`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        if (!response.ok) throw new Error(`Error en la solicitud DELETE: ${response.statusText}`);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Error en eliminarLista:", error);
+        return null;
+    }
+}
+// PUT
+async function actualizarLista(obj) {
+    try {
+        const response = await fetch("http://localhost:3002/users", {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(obj)
+        });
+        if (!response.ok) throw new Error(`Error en la solicitud PUT: ${response.statusText}`);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Error en actualizarLista:", error);
+        return null;
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}]},["28ufS","2PDYX"], "2PDYX", "parcelRequire94c2")
 

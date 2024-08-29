@@ -1,7 +1,7 @@
-11841
+11844
 80C:\Tiquetes-final\Tiquetes-final\node_modules\@swc\helpers\src\_create_super.mjs133693516565320223 0
 85C:\Tiquetes-final\Tiquetes-final\node_modules\caniuse-lite\data\features\clipboard.js133693516567114791 0
-21C:\Tiquetes-final\src133694144071514712 1
+21C:\Tiquetes-final\src133694226201299213 1
 69C:\Tiquetes-final\Tiquetes-final\node_modules\js-yaml\dist\js-yaml.js133693516587113175 0
 100C:\Tiquetes-final\Tiquetes-final\node_modules\css-select\node_modules\domutils\lib\querying.d.ts.map133693516576572888 0
 94C:\Tiquetes-final\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\index.js133693500197675928 0
@@ -9,16 +9,16 @@
 77C:\Tiquetes-final\Tiquetes-final\node_modules\caniuse-lite\data\regions\IM.js133693516572548587 0
 66C:\Tiquetes-final\Tiquetes-final\node_modules\escape-string-regexp133693516585342883 1
 115C:\Tiquetes-final\Tiquetes-final\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\clean\Declaration.js133693516524279137 0
-25C:\Tiquetes-final\db.json133694143061358967 0
+25C:\Tiquetes-final\db.json133694223646561229 0
 95C:\Tiquetes-final\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\dist\csstree.min.js133693500204286501 0
 95C:\Tiquetes-final\Tiquetes-final\node_modules\css-select\lib\esm\pseudo-selectors\subselects.js133693516575328661 0
 92C:\Tiquetes-final\Tiquetes-final\node_modules\csso\node_modules\css-tree\cjs\syntax\function133693516581465148 1
-30C:\Tiquetes-final\package.json133694143682591854 0
+30C:\Tiquetes-final\package.json133694275363981084 0
 59C:\Tiquetes-final\Tiquetes-final\node_modules\svgo\lib\svgo133693516595774268 1
 47C:\Tiquetes-final\Tiquetes-final\.git\logs\refs133693516516216690 1
 88C:\Tiquetes-final\Tiquetes-final\node_modules\caniuse-lite\data\features\rel-noopener.js133693516570428782 0
 70C:\Tiquetes-final\Tiquetes-final\node_modules\node-addon-api\README.md133693516592171567 0
-22C:\Tiquetes-final\dist133694149128113902 1
+22C:\Tiquetes-final\dist133694275365617000 1
 62C:\Tiquetes-final\Tiquetes-final\node_modules\error-ex\LICENSE133693516585185860 0
 55C:\Tiquetes-final\Tiquetes-final\node_modules\nth-check133693516592904271 1
 83C:\Tiquetes-final\Tiquetes-final\node_modules\svgo\plugins\moveElemsAttrsToGroup.js133693516596032615 0
@@ -198,7 +198,7 @@
 67C:\Tiquetes-final\Tiquetes-final\node_modules\posthtml\node_modules133693516593765699 1
 50C:\Tiquetes-final\Tiquetes-final\node_modules\.bin133693516517084872 1
 82C:\Tiquetes-final\Tiquetes-final\node_modules\@parcel\core\test\serializer.test.js133693516520935288 0
-40C:\Tiquetes-final\dist\login.127b065a.js133694149127775159 0
+40C:\Tiquetes-final\dist\login.127b065a.js133694275365502433 0
 67C:\Tiquetes-final\Tiquetes-final\node_modules\svgo\lib\svgo-node.js133693516595689499 0
 80C:\Tiquetes-final\Tiquetes-final\node_modules\htmlparser2\lib\Tokenizer.d.ts.map133693516586578685 0
 67C:\Tiquetes-final\Tiquetes-final\node_modules\browserslist\parse.js133693516566557258 0
@@ -2036,8 +2036,8 @@
 68C:\Tiquetes-final\node_modules\css-tree\cjs\syntax\node\Operator.cjs133693500208875796 0
 52C:\Tiquetes-final\node_modules\boolbase\package.json133693500191157770 0
 88C:\Tiquetes-final\Tiquetes-final\node_modules\lightningcss\node\browserslistToTargets.js133693516588967565 0
-82C:\Tiquetes-final\Tiquetes-final\node_modules\css-tree\lib\syntax\node\Selector.js133693516579520496 0
 84C:\Tiquetes-final\node_modules\css-select\node_modules\domutils\lib\esm\package.json133693500200532963 0
+82C:\Tiquetes-final\Tiquetes-final\node_modules\css-tree\lib\syntax\node\Selector.js133693516579520496 0
 76C:\Tiquetes-final\Tiquetes-final\node_modules\postcss-value-parser\README.md133693516593501175 0
 81C:\Tiquetes-final\node_modules\dom-serializer\node_modules\entities\lib\encode.js133693500194847391 0
 63C:\Tiquetes-final\node_modules\@parcel\core\test\Parcel.test.js133693500209737771 0
@@ -2260,7 +2260,7 @@
 72C:\Tiquetes-final\node_modules\@swc\helpers\cjs\_array_like_to_array.cjs133693500196491736 0
 63C:\Tiquetes-final\Tiquetes-final\node_modules\nth-check\lib\esm133693516592826784 1
 74C:\Tiquetes-final\Tiquetes-final\node_modules\nth-check\lib\index.d.ts.map133693516592851632 0
-34C:\Tiquetes-final\src\jsM\login.js133694149122567431 0
+34C:\Tiquetes-final\src\jsM\login.js133694274985933286 0
 80C:\Tiquetes-final\Tiquetes-final\node_modules\@parcel\workers\src\core-worker.js133693516555650958 0
 64C:\Tiquetes-final\Tiquetes-final\node_modules\@swc\types\LICENSE133693516565875174 0
 72C:\Tiquetes-final\Tiquetes-final\node_modules\@parcel\cache\lib\index.js133693516518566520 0
@@ -4241,7 +4241,7 @@
 82C:\Tiquetes-final\Tiquetes-final\node_modules\@parcel\core\src\UncommittedAsset.js133693516519861603 0
 95C:\Tiquetes-final\Tiquetes-final\node_modules\css-select\node_modules\domutils\lib\esm\index.js133693516576132128 0
 59C:\Tiquetes-final\Tiquetes-final\node_modules\css-tree\data133693516578597455 1
-29C:\Tiquetes-final\src\stylesM133694148640495440 1
+29C:\Tiquetes-final\src\stylesM133694220605627427 1
 70C:\Tiquetes-final\node_modules\lmdb\node_modules\node-addon-api\napi.h133693500198980846 0
 88C:\Tiquetes-final\Tiquetes-final\node_modules\css-select\lib\pseudo-selectors\pseudos.js133693516575575378 0
 70C:\Tiquetes-final\Tiquetes-final\node_modules\@parcel\packager-raw\lib133693516530608655 1
@@ -4267,7 +4267,7 @@
 74C:\Tiquetes-final\Tiquetes-final\node_modules\@parcel\events\lib\errors.js133693516521059761 0
 73C:\Tiquetes-final\Tiquetes-final\node_modules\css-tree\lib\utils\ident.js133693516579801448 0
 92C:\Tiquetes-final\Tiquetes-final\node_modules\@parcel\transformer-postcss\src\loadPlugins.js133693516553787721 0
-33C:\Tiquetes-final\dist\login.html133694149128103887 0
+33C:\Tiquetes-final\dist\login.html133694261915113965 0
 73C:\Tiquetes-final\Tiquetes-final\node_modules\css-tree\lib\utils\index.js133693516579811408 0
 100C:\Tiquetes-final\Tiquetes-final\node_modules\css-select\node_modules\domutils\lib\esm\legacy.js.map133693516576207290 0
 72C:\Tiquetes-final\Tiquetes-final\node_modules\css-tree\lib\utils\List.js133693516579771010 0
@@ -8047,7 +8047,7 @@
 74C:\Tiquetes-final\node_modules\css-tree\lib\syntax\node\NestingSelector.js133693500213246777 0
 113C:\Tiquetes-final\Tiquetes-final\node_modules\@parcel\core\test\fixtures\config-extends-not-found\.parcelrc-json5133693516520462770 0
 107C:\Tiquetes-final\Tiquetes-final\node_modules\@parcel\core\test\fixtures\common-targets-ignore\package.json133693516520435658 0
-41C:\Tiquetes-final\src\html\consultas.html133693684066600119 0
+41C:\Tiquetes-final\src\html\consultas.html133694276869541849 0
 100C:\Tiquetes-final\Tiquetes-final\node_modules\@parcel\core\test\fixtures\common-targets\package.json133693516520447661 0
 63C:\Tiquetes-final\node_modules\htmlnano\lib\modules\example.cjs133693500197916822 0
 74C:\Tiquetes-final\node_modules\lmdb\node_modules\node-addon-api\LICENSE.md133693500201047727 0
@@ -8285,7 +8285,7 @@
 55C:\Tiquetes-final\node_modules\csso\cjs\replace\Url.cjs133693500203965318 0
 87C:\Tiquetes-final\Tiquetes-final\node_modules\.bin\node-gyp-build-optional-packages.ps1133693516516978325 0
 61C:\Tiquetes-final\Tiquetes-final\node_modules\.bin\parcel.cmd133693516517001121 0
-38C:\Tiquetes-final\src\jsM\consultas.js133693686317656446 0
+38C:\Tiquetes-final\src\jsM\consultas.js133694230880093777 0
 61C:\Tiquetes-final\Tiquetes-final\node_modules\.bin\parcel.ps1133693516517001121 0
 50C:\Tiquetes-final\node_modules\regenerator-runtime133693500195466814 1
 84C:\Tiquetes-final\node_modules\caniuse-lite\data\features\font-variant-alternates.js133693500217064997 0
@@ -8334,7 +8334,13 @@
 61C:\Tiquetes-final\Tiquetes-final\.git\hooks\pre-commit.sample133693515917068623 0
 67C:\Tiquetes-final\Tiquetes-final\.git\hooks\push-to-checkout.sample133693515917111044 0
 32C:\Tiquetes-final\src\index.html133693522872385765 0
-37C:\Tiquetes-final\src\html\login.html133694148797588053 0
+30C:\Tiquetes-final\src\services133694221500726200 1
+62C:\Tiquetes-final\node_modules\caniuse-lite\data\regions\BA.js133693500205512605 0
+43C:\Tiquetes-final\src\stylesM\consultas.css133694220636598650 0
+39C:\Tiquetes-final\src\stylesM\login.css133694220905315483 0
+39C:\Tiquetes-final\src\services\fetch.js133694232067771103 0
+51C:\Tiquetes-final\node_modules\csso\dist\version.js133693500209106599 0
+37C:\Tiquetes-final\src\html\login.html133694218023484675 0
 45C:\Tiquetes-final\node_modules\.bin\json5.ps1133693500227039277 0
 37C:\Tiquetes-final\node_modules\@lezer133693500176596424 1
 49C:\Tiquetes-final\node_modules\picomatch\index.js133693500193053250 0
@@ -9382,7 +9388,6 @@
 71C:\Tiquetes-final\node_modules\csso\lib\replace\property\font-weight.js133693500207834864 0
 67C:\Tiquetes-final\node_modules\csso\lib\replace\atrule\keyframes.js133693500208207662 0
 53C:\Tiquetes-final\node_modules\csso\lib\clean\Rule.js133693500208535968 0
-51C:\Tiquetes-final\node_modules\csso\dist\version.js133693500209106599 0
 52C:\Tiquetes-final\node_modules\csso\cjs\compress.cjs133693500200532963 0
 47C:\Tiquetes-final\node_modules\csso\cjs\replace133693500204411770 1
 49C:\Tiquetes-final\node_modules\csso\cjs\usage.cjs133693500204038621 0
@@ -9884,7 +9889,6 @@
 62C:\Tiquetes-final\node_modules\caniuse-lite\data\regions\AT.js133693500204116728 0
 62C:\Tiquetes-final\node_modules\caniuse-lite\data\regions\AU.js133693500204316570 0
 62C:\Tiquetes-final\node_modules\caniuse-lite\data\regions\AX.js133693500205337755 0
-62C:\Tiquetes-final\node_modules\caniuse-lite\data\regions\BA.js133693500205512605 0
 62C:\Tiquetes-final\node_modules\caniuse-lite\data\regions\BB.js133693500206666490 0
 62C:\Tiquetes-final\node_modules\caniuse-lite\data\regions\BD.js133693500206734087 0
 62C:\Tiquetes-final\node_modules\caniuse-lite\data\regions\BF.js133693500207011984 0
@@ -11833,10 +11837,9 @@
 40C:\Tiquetes-final\node_modules\.bin\svgo133693500227065232 0
 44C:\Tiquetes-final\node_modules\.bin\svgo.ps1133693500227065232 0
 58C:\Tiquetes-final\node_modules\.bin\update-browserslist-db133693500227481664 0
+44C:\Tiquetes-final\dist\login.127b065a.js.map133694275365601562 0
+41C:\Tiquetes-final\dist\login.8da77006.css133694275365547098 0
+45C:\Tiquetes-final\dist\login.8da77006.css.map133694275365617000 0
 51C:\Tiquetes-final\dist\Tiquetes-final-1.59712999.js133693522872215114 0
 49C:\Tiquetes-final\dist\Tiquetes-final.59712999.js133694143683281620 0
 53C:\Tiquetes-final\dist\Tiquetes-final.59712999.js.map133694143683303346 0
-39C:\Tiquetes-final\src\stylesM\login.css133694148640495440 0
-44C:\Tiquetes-final\dist\login.127b065a.js.map133694149127851681 0
-41C:\Tiquetes-final\dist\login.8da77006.css133694149127953578 0
-45C:\Tiquetes-final\dist\login.8da77006.css.map133694149128008101 0

@@ -7,26 +7,59 @@
     <link rel="stylesheet" href="/src/styles/consultas.css">
 </head>
 <body>
+
+<!-- lista consultas -->
+<div>
     <h1>Lista de Consultas</h1>
     <label for="text">Ingrese su nombre</label>
     <br>
     <input type="text" id="inputnombre">
     <br>
+    <label for="text">Tipo de Consulta</label>
+    <br>
+    <select name="select" id="select">
+        <option value="">- - Seleccione el tipo de consulta - -</option>
+        <option value="Justificar Ausencia">Justificar Ausencia</option>
+        <option value="Permiso de Salida">Permiso de Salida</option>
+        <option value="Llegada Tardia">Llegada Tardia</option>
+        <option value="Trabajar desde Casa">Trabajar desde Casa</option>
+        <option value="Solicitar el Desglose">Solicitar el Desglose</option>
+        <option value="Solicitar nota del proyecto">Solicitar nota del proyecto</option>
+      </select>
+      <br>
     <label for="text">Ingrese su consulta</label>
     <br>
     <input type="text" id="inputconsulta">
     <br>
-    <label for="fecha">Ingrese la fecha</label>
+    <label for="date">Ingrese la fecha</label>
     <br>
-    <input type="date" id="inputfecha" required>
+    <input type="date" id="inputfecha">
+    <br>
+    <label for="time">Ingrese la hora</label>
+    <br>
+    <input type="time" id="inputtime">
     <br>
     <button id="guardarconsultas">Agregar Consultas</button>
-    <div id="listaconsultas" class="grid-container"></div>
+
+    <div id="consultas-container">
+        <!-- Las consultas se mostrarán aquí -->
+    </div>
 
     <div>
-        <h1>bienvenidos</h1>
-        <h1 id="mensaje">Esperando mensaje...</h1>
+        <button id="estadisticas" type="submit">Estadisticas</button>
     </div>
+
+    <!-- Plantilla para una consulta -->
+    <template id="consulta-template">
+        <div class="consulta-item">
+            <p><strong>Nombre:</strong> <span class="nombre"></span></p>
+            <p><strong>Tipo de Consulta:</strong> <span class="tipoconsulta"></span></p>
+            <p><strong>Consulta:</strong> <span class="consulta"></span></p>
+            <p><strong>Fecha:</strong> <span class="fecha"></span></p>
+            <p><strong>Hora:</strong> <span class="time"></span></p>
+        </div>
+    </template>
+</div>
 
 <script src="/src/jsM/consultas.js"></script>
 </body>
