@@ -1,5 +1,6 @@
 import { getDatosConsul } from "../services/fetch";
 import { eliminarLista } from "../services/fetch";
+import { actualizarLista } from "../services/fetch";
 document.addEventListener('DOMContentLoaded', () => {
     const consultasBody = document.getElementById('consultasBody');
     const editModal = document.getElementById('editModal');

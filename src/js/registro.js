@@ -1,5 +1,4 @@
-import { darDatos } from "../services/fetch";
-
+import { darDatosConsulta } from "../services/fetch";
 const boton1 = document.getElementById("botoncito");
 
 boton1.addEventListener("click", async function (e) {
@@ -28,7 +27,7 @@ boton1.addEventListener("click", async function (e) {
 
     try {
         
-        await darDatos(listaInput);
+        await darDatosConsulta(listaInput);
     
         alert("Usuario registrado satisfactoriamente");
         window.location.href = "login.html";

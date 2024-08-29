@@ -1,4 +1,4 @@
-5896
+5901
 124C:\Users\jsoli\Tiquetes-final-1\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\pseudo\nth-child.js133693497897941616 0
 44C:\Users\jsoli\Tiquetes-final-1\node_modules133693544785681144 1
 95C:\Users\jsoli\Tiquetes-final-1\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\chacha8.h133693497898891514 0
@@ -33,7 +33,7 @@
 89C:\Users\jsoli\Tiquetes-final-1\node_modules\node-gyp-build-optional-packages\optional.js133693497877114290 0
 84C:\Users\jsoli\Tiquetes-final-1\node_modules\caniuse-lite\data\features\gyroscope.js133693497911409551 0
 96C:\Users\jsoli\Tiquetes-final-1\node_modules\caniuse-lite\data\features\contentsecuritypolicy.js133693497899493926 0
-36C:\Users\jsoli\Tiquetes-final-1\dist133693745731598283 1
+36C:\Users\jsoli\Tiquetes-final-1\dist133694159794744843 1
 84C:\Users\jsoli\Tiquetes-final-1\node_modules\@parcel\utils\test\input\config\.testrc133693497912605902 0
 59C:\Users\jsoli\Tiquetes-final-1\node_modules\dom-serializer133693497881351749 1
 90C:\Users\jsoli\Tiquetes-final-1\node_modules\@parcel\core\test\ParcelConfigRequest.test.js133693497930091465 0
@@ -76,7 +76,7 @@
 49C:\Users\jsoli\Tiquetes-final-1\node_modules\.bin133693497984141475 1
 71C:\Users\jsoli\Tiquetes-final-1\node_modules\tslib\modules\package.json133693497878298767 0
 76C:\Users\jsoli\Tiquetes-final-1\node_modules\caniuse-lite\data\regions\UA.js133693497928143840 0
-54C:\Users\jsoli\Tiquetes-final-1\src\js\estadisticas.js133693761559178043 0
+54C:\Users\jsoli\Tiquetes-final-1\src\js\estadisticas.js133694139399120356 0
 97C:\Users\jsoli\Tiquetes-final-1\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\replace133693497892085940 1
 75C:\Users\jsoli\Tiquetes-final-1\node_modules\lines-and-columns\package.json133693497875975195 0
 84C:\Users\jsoli\Tiquetes-final-1\node_modules\@parcel\utils\test\prettifyTime.test.js133693497916435118 0
@@ -134,7 +134,7 @@
 68C:\Users\jsoli\Tiquetes-final-1\node_modules\lines-and-columns\build133693497877225088 1
 82C:\Users\jsoli\Tiquetes-final-1\node_modules\@parcel\cache\src\IDBCache.browser.js133693497888852132 0
 59C:\Users\jsoli\Tiquetes-final-1\node_modules\dotenv\LICENSE133693497876611222 0
-50C:\Users\jsoli\Tiquetes-final-1\src\js\registro.js133693758602317024 0
+50C:\Users\jsoli\Tiquetes-final-1\src\js\registro.js133694159794269201 0
 120C:\Users\jsoli\Tiquetes-final-1\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages\package.json133693497878625897 0
 69C:\Users\jsoli\Tiquetes-final-1\node_modules\htmlnano\lib\helpers.cjs133693497881339521 0
 90C:\Users\jsoli\Tiquetes-final-1\node_modules\@swc\helpers\_\_write_only_error\package.json133693497909595988 0
@@ -1166,6 +1166,7 @@
 70C:\Users\jsoli\Tiquetes-final-1\node_modules\source-map-js\lib\util.js133693497881733495 0
 95C:\Users\jsoli\Tiquetes-final-1\node_modules\@swc\helpers\_\_class_apply_descriptor_destructure133693497904266691 1
 87C:\Users\jsoli\Tiquetes-final-1\node_modules\posthtml-parser\dist\location-tracker.d.ts133693497880171173 0
+62C:\Users\jsoli\Tiquetes-final-1\dist\registro.8230bc79.css.map133694159507806330 0
 76C:\Users\jsoli\Tiquetes-final-1\node_modules\csso\cjs\clean\TypeSelector.cjs133693497889514467 0
 75C:\Users\jsoli\Tiquetes-final-1\node_modules\svgo\plugins\removeComments.js133693497896182113 0
 122C:\Users\jsoli\Tiquetes-final-1\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\node\AtrulePrelude.js133693497878440763 0
@@ -2054,6 +2055,7 @@
 120C:\Users\jsoli\Tiquetes-final-1\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\AnPlusB.js133693497877059686 0
 104C:\Users\jsoli\Tiquetes-final-1\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_dump.c133693497891333984 0
 91C:\Users\jsoli\Tiquetes-final-1\node_modules\css-select\lib\esm\pseudo-selectors\aliases.js133693497875525287 0
+58C:\Users\jsoli\Tiquetes-final-1\dist\registro.8230bc79.css133694159507730926 0
 80C:\Users\jsoli\Tiquetes-final-1\node_modules\lmdb\dependencies\lz4\lib\lz4file.c133693497889823880 0
 106C:\Users\jsoli\Tiquetes-final-1\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\replace\index.js133693497889310380 0
 75C:\Users\jsoli\Tiquetes-final-1\node_modules\@parcel\utils\src\sourcemap.js133693497917658972 0
@@ -3972,6 +3974,7 @@
 63C:\Users\jsoli\Tiquetes-final-1\node_modules\callsites\index.js133693497875750915 0
 121C:\Users\jsoli\Tiquetes-final-1\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\Operator.js133693497898542237 0
 76C:\Users\jsoli\Tiquetes-final-1\node_modules\caniuse-lite\data\regions\SM.js133693497926108586 0
+50C:\Users\jsoli\Tiquetes-final-1\dist\registro.html133694159508097050 0
 76C:\Users\jsoli\Tiquetes-final-1\node_modules\caniuse-lite\data\regions\SN.js133693497926142518 0
 76C:\Users\jsoli\Tiquetes-final-1\node_modules\caniuse-lite\data\regions\SO.js133693497926192913 0
 76C:\Users\jsoli\Tiquetes-final-1\node_modules\caniuse-lite\data\regions\ST.js133693497926352627 0
@@ -5895,3 +5898,5 @@
 76C:\Users\jsoli\Tiquetes-final-1\node_modules\.bin\update-browserslist-db.cmd133693497984151487 0
 76C:\Users\jsoli\Tiquetes-final-1\node_modules\.bin\update-browserslist-db.ps1133693497984151487 0
 65C:\Users\jsoli\Tiquetes-final-1\dist\Tiquetes-final-1.59712999.js133693530597861536 0
+57C:\Users\jsoli\Tiquetes-final-1\dist\registro.c095dc3c.js133694159794714257 0
+61C:\Users\jsoli\Tiquetes-final-1\dist\registro.c095dc3c.js.map133694159794744843 0
