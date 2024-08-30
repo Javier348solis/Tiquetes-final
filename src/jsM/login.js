@@ -22,7 +22,7 @@ document.getElementById("ingresar").addEventListener("click", async (e) => {
     }
 
     try {
-        // Obtener los datos de usuarios desde el backend
+        // Obtener los datos de usuarios 
         const usuarios = await getDatos();
 
         // Validar si el usuario existe

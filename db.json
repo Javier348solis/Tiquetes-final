@@ -27,6 +27,27 @@
       "inputCorreo": "tiago@gmail.com",
       "inputContra": "1234",
       "inputID": "50"
+    },
+    {
+      "id": "8f90",
+      "inputNombre": "javier solis",
+      "inputCorreo": "jav@gmail.com",
+      "inputContra": "8523",
+      "inputID": "123"
+    },
+    {
+      "id": "87d5",
+      "inputNombre": "Moha",
+      "inputCorreo": "chevezSa@gmail.com",
+      "inputContra": "1234",
+      "inputID": "970"
+    },
+    {
+      "id": "c906",
+      "inputNombre": "Moha",
+      "inputCorreo": "chevezSa@gmail.com",
+      "inputContra": "1234",
+      "inputID": "970"
     }
   ],
   "consultas": [
@@ -47,76 +68,6 @@
       "time": "08:30"
     },
     {
-      "id": "49ba",
-      "inputNombre": "javier solis",
-      "inputCorreo": "jav@gmail.com",
-      "inputContra": "1234",
-      "inputID": "234"
-    },
-    {
-      "id": "1165",
-      "inputNombre": "wer",
-      "inputCorreo": "n@gmail.com",
-      "inputContra": "9696",
-      "inputID": "9870"
-    },
-    {
-      "id": "12b0",
-      "inputNombre": "santiago",
-      "inputCorreo": "tiago@gmail.com",
-      "inputContra": "12345",
-      "inputID": "321"
-    },
-    {
-      "id": "f135",
-      "inputNombre": "santiago",
-      "inputCorreo": "tiago@gmail.com",
-      "inputContra": "1234",
-      "inputID": "3434"
-    },
-    {
-      "id": "bb81",
-      "inputNombre": "wendy",
-      "inputCorreo": "wendy@gmail.com",
-      "inputContra": "12345",
-      "inputID": "12345"
-    },
-    {
-      "id": "6538",
-      "inputNombre": "jos",
-      "inputCorreo": "jos@gmail.com",
-      "inputContra": "1235",
-      "inputID": "12346"
-    },
-    {
-      "id": "4079",
-      "inputNombre": "jos",
-      "inputCorreo": "jos@gmail.com",
-      "inputContra": "1234",
-      "inputID": "12346"
-    },
-    {
-      "id": "927f",
-      "inputNombre": "jos",
-      "inputCorreo": "jos@gmail.com",
-      "inputContra": "123",
-      "inputID": "12346"
-    },
-    {
-      "id": "1a5c",
-      "inputNombre": "jos",
-      "inputCorreo": "jos@gmail.com",
-      "inputContra": "123",
-      "inputID": "1234"
-    },
-    {
-      "id": "ffde",
-      "inputNombre": "jos",
-      "inputCorreo": "jos@gmail.com",
-      "inputContra": "123",
-      "inputID": "1234"
-    },
-    {
       "id": "08f8",
       "nombre": "michelle",
       "tipoConsulta": "Justificar Ausencia",
@@ -125,18 +76,12 @@
       "time": "10:55"
     },
     {
-      "id": "e5f7",
-      "inputNombre": "santiago",
-      "inputCorreo": "tiago@gmail.com",
-      "inputContra": "1234",
-      "inputID": "50"
-    },
-    {
-      "id": "2bc5",
-      "inputNombre": "santiago",
-      "inputCorreo": "tiago@gmail.com",
-      "inputContra": "1234",
-      "inputID": "40"
+      "id": "9a27",
+      "nombre": "maria lopez ",
+      "tipoConsulta": "Llegada Tardia",
+      "consultas": "Me dejo la cazadora",
+      "fecha": "2024-08-29",
+      "time": "16:40"
     }
   ]
 }
