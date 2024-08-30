@@ -1,47 +1,7 @@
-<<<<<<< HEAD
-//Post
-export async function darDatos(data) {
-    try {
-        const response = await fetch('http://localhost:3000/users', { // Cambia la URL si es necesario
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        });
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const result = await response.json();
-        console.log('Datos guardados exitosamente:', result);
-    } catch (error) {
-        console.error('Error al guardar datos:', error);
-    }
-}
-//GET
-// ../services/fetch.js
- export async function getDatos() {
-    try {
-        const response = await fetch('http://localhost:3000/users'); // Ajusta la URL según sea necesario
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return await response.json(); // Asegúrate de que el JSON sea el formato correcto
-    } catch (error) {
-        console.error( error);
-        return []; // Devuelve un array vacío en caso de error para evitar fallos
-    }
-}
-
-// DELETE
-async function eliminarLista(id) { // Asumiendo que se debe eliminar por ID
-    try {
-        const response = await fetch(`http://localhost:3002/users/${id}`, { // Utiliza el ID en la URL
-=======
 // POST
-async function darDatosConsulta(obj) {
+async function darDatos(obj) {
     try {
-        const respuesta = await fetch("http://localhost:3003/consultas", {
+        const respuesta = await fetch("http://localhost:3002/users", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json; charset=UTF-8"
@@ -52,10 +12,31 @@ async function darDatosConsulta(obj) {
             throw new Error(`Error en la solicitud POST: ${respuesta.statusText}`);
         }
         const data = await respuesta.json();
-        // console.log(data);
+        console.log(data);
         return data;
     } catch (error) {
-        console.error( error);
+        console.error("Error en darDatos:", error);
+        return null;
+    }
+}
+// POST
+async function darDatosConsulta(obj) {
+    try {
+        const respuesta = await fetch("http://localhost:3002/consultas", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json; charset=UTF-8"
+            },
+            body: JSON.stringify(obj)
+        });
+        if (!respuesta.ok) {
+            throw new Error(`Error en la solicitud POST: ${respuesta.statusText}`);
+        }
+        const data = await respuesta.json();
+        console.log(data);
+        return data;
+    } catch (error) {
+        console.error("Error en darDatos:", error);
         return null;
     }
 }
@@ -64,7 +45,7 @@ export { darDatosConsulta };
 // GET
 async function getDatos() {
     try {
-        const response = await fetch('http://localhost:3003/users');
+        const response = await fetch('http://localhost:3002/users');
         if (!response.ok) {
             throw new Error(`Error fetching users: ${response.statusText}`);
         }
@@ -75,12 +56,12 @@ async function getDatos() {
         return [];
     }
 }
-export {getDatos};
+export { getDatos };
 
 // GET consultas
 async function getDatosConsul() {
     try {
-        const response = await fetch('http://localhost:3003/consultas');
+        const response = await fetch('http://localhost:3002/consultas');
         if (!response.ok) {
             throw new Error(`Error fetching users: ${response.statusText}`);
         }
@@ -96,8 +77,7 @@ export { getDatosConsul };
 // DELETE
 async function eliminarLista(id) {
     try {
-        const response = await fetch(`http://localhost:3003/consultas/${id}`, {
->>>>>>> 8e19124f550b9b6bc1187695caaef78fd1cbccc4
+        const response = await fetch(`http://localhost:3002/consultas/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",
@@ -113,16 +93,13 @@ async function eliminarLista(id) {
         return null;
     }
 }
-<<<<<<< HEAD
-export { eliminarLista };
-=======
 export { eliminarLista };
 
 
 // PUT
 async function actualizarLista(obj) {
     try {
-        const response = await fetch('http://localhost:3003/users', {
+        const response = await fetch('http://localhost:3002/users', {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -140,4 +117,3 @@ async function actualizarLista(obj) {
     }
 }
 export { actualizarLista };
->>>>>>> 8e19124f550b9b6bc1187695caaef78fd1cbccc4

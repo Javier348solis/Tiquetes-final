@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+import { darDatosConsulta } from "../services/fetch";
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
+>>>>>>> 04d42c08288ceb55093a00cd55b1e6cb044338d3
 const boton1 = document.getElementById("botoncito");
 
 boton1.addEventListener("click", async function (e) {
@@ -26,7 +32,11 @@ boton1.addEventListener("click", async function (e) {
 
     try {
         
+<<<<<<< HEAD
         await darDatos(listaInput);
+=======
+        await darDatosConsulta (listaInput);
+>>>>>>> 04d42c08288ceb55093a00cd55b1e6cb044338d3
     
         alert("Usuario registrado satisfactoriamente");
         window.location.href = "login.html";

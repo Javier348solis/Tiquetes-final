@@ -18,10 +18,17 @@
     "sweetalert2": "^11.12.4"
   },
   "scripts": {
+<<<<<<< HEAD
     "start": "parcel src/html/estadisticas.html"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0"
 >>>>>>> 8e19124f550b9b6bc1187695caaef78fd1cbccc4
+=======
+    "start": "parcel src/html/registro.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0"
+>>>>>>> 04d42c08288ceb55093a00cd55b1e6cb044338d3
   }
 }
