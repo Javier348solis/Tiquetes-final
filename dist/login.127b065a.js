@@ -619,7 +619,7 @@ parcelHelpers.export(exports, "eliminarLista", ()=>eliminarLista);
 parcelHelpers.export(exports, "actualizarLista", ()=>actualizarLista);
 async function darDatosConsulta(obj) {
     try {
-        const respuesta = await fetch("http://localhost:3002/consultas", {
+        const respuesta = await fetch("http://localhost:3003/consultas", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json; charset=UTF-8"
@@ -638,7 +638,7 @@ async function darDatosConsulta(obj) {
 // GET
 async function getDatos() {
     try {
-        const response = await fetch("http://localhost:3002/users");
+        const response = await fetch("http://localhost:3003/users");
         if (!response.ok) throw new Error(`Error fetching users: ${response.statusText}`);
         const data = await response.json();
         return data;
@@ -650,7 +650,7 @@ async function getDatos() {
 // GET consultas
 async function getDatosConsul() {
     try {
-        const response = await fetch("http://localhost:3002/consultas");
+        const response = await fetch("http://localhost:3003/consultas");
         if (!response.ok) throw new Error(`Error fetching users: ${response.statusText}`);
         const data = await response.json();
         return data;
@@ -662,7 +662,7 @@ async function getDatosConsul() {
 // DELETE
 async function eliminarLista(id) {
     try {
-        const response = await fetch(`http://localhost:3002/consultas/${id}`, {
+        const response = await fetch(`http://localhost:3003/consultas/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
@@ -679,7 +679,7 @@ async function eliminarLista(id) {
 // PUT
 async function actualizarLista(obj) {
     try {
-        const response = await fetch("http://localhost:3002/users", {
+        const response = await fetch("http://localhost:3003/users", {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

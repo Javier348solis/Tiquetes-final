@@ -1,6 +1,5 @@
 import { darDatosConsulta } from "../services/fetch";
-const estadisticas = document.getElementById("estadisticas")
-
+const estadisticas = document.getElementById("estadisticas");
 let guardarConsultas = document.getElementById("guardarconsultas");
 let consultasContainer = document.getElementById("consultas-container");
 let listaConsultas = JSON.parse(localStorage.getItem("ListaConsultas")) || [];
