@@ -1,6 +1,8 @@
 import { getDatosConsul } from "../services/fetch";
 import { eliminarLista } from "../services/fetch";
 import { actualizarLista } from "../services/fetch";
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
 document.addEventListener('DOMContentLoaded', () => {
     const consultasBody = document.getElementById('consultasBody');
     const editModal = document.getElementById('editModal');

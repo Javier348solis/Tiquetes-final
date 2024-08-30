@@ -1,4 +1,6 @@
 import { darDatosConsulta } from "../services/fetch";
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
 const boton1 = document.getElementById("botoncito");
 
 boton1.addEventListener("click", async function (e) {
@@ -27,7 +29,7 @@ boton1.addEventListener("click", async function (e) {
 
     try {
         
-        await darDatosConsulta(listaInput);
+        await darDatosConsulta (listaInput);
     
         alert("Usuario registrado satisfactoriamente");
         window.location.href = "login.html";
