@@ -592,16 +592,28 @@ document.getElementById("ingresar").addEventListener("click", async (e)=>{
     const clave = document.getElementById("clave").value.trim();
     const codigo = document.getElementById("codigo").value.trim();
     if (!nombre || !correo || !clave || !codigo) {
-        alert("Rellene todos los espacios");
+        Swal.fire({
+            title: "Exito",
+            text: "Rellene los espacios vacios",
+            icon: "success"
+        });
         return;
     }
     try {
         const usuarios = await (0, _fetch.getDatos)();
         const usuarioValido = usuarios.find((usuario)=>usuario.inputNombre === nombre && usuario.inputCorreo === correo && usuario.inputContra === clave && usuario.inputID === codigo);
         if (usuarioValido) {
-            alert("Inicio de sesi\xf3n exitoso!");
+            Swal.fire({
+                title: "Exito",
+                text: "Bienvenido",
+                icon: "success"
+            });
             window.location.href = "consultas.html";
-        } else alert("Nombre de usuario, correo o contrase\xf1a incorrectos.");
+        } else Swal.fire({
+            title: "Datos incorrectos",
+            text: "Usuario no encontrado",
+            icon: "error"
+        });
     } catch (error) {
         console.error("Error durante el inicio de sesi\xf3n:", error);
         alert("Hubo un problema al procesar el inicio de sesi\xf3n. Int\xe9ntelo de nuevo.");

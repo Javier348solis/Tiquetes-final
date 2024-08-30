@@ -9,7 +9,11 @@ document.getElementById("ingresar").addEventListener("click", async (e) => {
     const codigo = document.getElementById("codigo").value.trim();
 
     if (!nombre || !correo || !clave || !codigo) {
-        alert("Rellene todos los espacios");
+        Swal.fire({
+            title: "Exito",
+            text: "Rellene los espacios vacios",
+            icon: "success"
+          });
         return; 
     }
 
