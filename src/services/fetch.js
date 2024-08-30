@@ -19,7 +19,29 @@ async function darDatosConsulta(obj) {
         return null;
     }
 }
-export { darDatosConsulta };
+
+// POST
+async function darDatos(obj) {
+    try {
+        const respuesta = await fetch("http://localhost:3003/users", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json; charset=UTF-8"
+            },
+            body: JSON.stringify(obj)
+        });
+        if (!respuesta.ok) {
+            throw new Error(`Error en la solicitud POST: ${respuesta.statusText}`);
+        }
+        const data = await respuesta.json();
+        // console.log(data);
+        return data;
+    } catch (error) {
+        console.error( error);
+        return null;
+    }
+}
+export { darDatos };
 
 // GET
 async function getDatos() {
@@ -51,7 +73,7 @@ async function getDatosConsul() {
         return [];
     }
 }
-export { getDatosConsul };
+export { getDatosConsul }
 
 // DELETE
 async function eliminarLista(id) {

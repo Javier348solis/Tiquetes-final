@@ -596,24 +596,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const saveBtn = document.getElementById("saveBtn");
     const closeBtn = document.querySelector(".close");
     let currentEditIndex = null;
-    // Obtener las consultas del localStorage
     function getConsultas() {
         return JSON.parse(localStorage.getItem("ListaConsultas")) || [];
     }
-    // Guardar las consultas en el localStorage
     function saveConsultas(consultas) {
         localStorage.setItem("ListaConsultas", JSON.stringify(consultas));
     }
     function renderTable() {
         consultasBody.innerHTML = "";
-        const consultas = (0, _fetch.getDatosConsul)(); // Obtener las consultas actualizadas
+        const consultas = getConsultas();
         consultas.forEach((consulta, index)=>{
             const row = document.createElement("tr");
             const actionsCell = document.createElement("td");
             actionsCell.innerHTML = `
-                <button class="edit" onclick="editRow(${index})">Editar</button>
-                <button class="delete" onclick="deleteRow(${index})">Eliminar</button>
-                <button class="done" onclick="markAsDone(${index})">Listo</button>
+                <button class="edit" data-index="${index}">Editar</button>
+                <button class="delete" data-index="${index}">Eliminar</button>
+                <button class="done" data-index="${index}">Listo</button>
             `;
             const nombreCell = document.createElement("td");
             nombreCell.textContent = consulta.nombre;
@@ -633,13 +631,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
             row.appendChild(timeCell);
             consultasBody.appendChild(row);
         });
+        setupEventListeners();
     }
-    window.editRow = (index)=>{
+    function setupEventListeners() {
+        consultasBody.addEventListener("click", (event)=>{
+            const index = event.target.dataset.index;
+            if (event.target.classList.contains("edit")) editRow(index);
+            else if (event.target.classList.contains("delete")) deleteRow(index);
+            else if (event.target.classList.contains("done")) markAsDone(index);
+        });
+    }
+    function editRow(index) {
         const consultas = getConsultas();
         currentEditIndex = index;
         modalInput.value = consultas[index].consultas;
         editModal.style.display = "block";
-    };
+    }
     closeBtn.onclick = ()=>{
         editModal.style.display = "none";
     };
@@ -656,12 +663,32 @@ document.addEventListener("DOMContentLoaded", ()=>{
             currentEditIndex = null;
         }
     };
-    window.deleteRow = async (index)=>{
-        if (confirm("\xbfEst\xe1 seguro de que desea eliminar esta consulta?")) await (0, _fetch.eliminarLista)(index);
-    };
-    window.markAsDone = (index)=>{
-        alert("Consulta marcada como lista");
-    };
+    async function deleteRow(index) {
+        try {
+            const result = await (0, _sweetalert2JsDefault.default).fire({
+                title: "\xbfEst\xe1 seguro?",
+                text: "\xa1No podr\xe1s revertir esta acci\xf3n!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonText: "S\xed, eliminar",
+                cancelButtonText: "Cancelar"
+            });
+            if (result.isConfirmed) {
+                await (0, _fetch.eliminarLista)(index); // Llama a eliminarLista para eliminar el elemento
+                renderTable(); // Vuelve a renderizar la tabla para reflejar los cambios
+                (0, _sweetalert2JsDefault.default).fire("Eliminado!", "La consulta ha sido eliminada.", "success");
+            }
+        } catch (error) {
+            (0, _sweetalert2JsDefault.default).fire("Error", "No se pudo eliminar la consulta.", "error");
+        }
+    }
+    function markAsDone(index) {
+        (0, _sweetalert2JsDefault.default).fire({
+            title: "Consulta marcada como lista",
+            icon: "success"
+        });
+    // Aquí podrías actualizar el estado de la consulta como "hecho" si es necesario
+    }
     renderTable();
 });
 

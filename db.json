@@ -20,6 +20,13 @@
       "inputCorreo": "pepinbananin@gmail.com",
       "inputContra": "6969",
       "inputID": "1"
+    },
+    {
+      "id": "fc21",
+      "inputNombre": "santiago",
+      "inputCorreo": "tiago@gmail.com",
+      "inputContra": "1234",
+      "inputID": "50"
     }
   ],
   "consultas": [
@@ -116,6 +123,20 @@
       "consultas": "ya pasaron asistencia",
       "fecha": "2024-08-30",
       "time": "10:55"
+    },
+    {
+      "id": "e5f7",
+      "inputNombre": "santiago",
+      "inputCorreo": "tiago@gmail.com",
+      "inputContra": "1234",
+      "inputID": "50"
+    },
+    {
+      "id": "2bc5",
+      "inputNombre": "santiago",
+      "inputCorreo": "tiago@gmail.com",
+      "inputContra": "1234",
+      "inputID": "40"
     }
   ]
 }
