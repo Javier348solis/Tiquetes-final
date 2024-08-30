@@ -1,0 +1,35 @@
+/* planilla para las consultas */
+
+.consulta-item {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.consulta-item p {
+    margin: 5px 0;
+}
+
+.nombre{
+    background-color: rgb(151, 252, 252);
+}
+
+.tipoconsulta{
+    background-color: rgb(222, 201, 241);
+}
+
+.consulta{
+    background-color: rgb(182, 213, 227);
+}
+
+.fecha{
+    background-color: chartreuse;
+}
+
+.time{
+    background-color: darksalmon;
+}
+
+#guardarconsultas{
+    background-color: darkviolet;
+}

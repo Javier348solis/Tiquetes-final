@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/src/styles/registro.css">
+    <link rel="stylesheet" href="/src/stylesM/registro.css">
 </head>
 <body>
+       
     <div class="contenedor-registro">
         <h1>Registro</h1>
         <input class="espacios1" id="espacio-nombre" type="text" placeholder="Nombre completo">
         <input class="espacios1" id="espacio-correo" type="email" placeholder="Correo">
         <input class="espacios1" id="espacio-contraseña" type="password" placeholder="Contraseña">
-        <input class="espacios1" id="espacio-ID" type="number" placeholder="ID">
+        <input class="espacios1" id="espacio-ID" type="number" placeholder="Identificacion">
         <button class="btn-color" type="submit" id="botoncito">Registrarse</button>
-
-        <script src="/src/js/registro.js"></script>
     </div>
+    <script src="../jsM/registro.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

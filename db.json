@@ -1,6 +1,128 @@
 {
+<<<<<<< HEAD
     "users" :
     {
         
     }
+=======
+  "users": [
+    {
+      "id": "d1bb",
+      "inputNombre": "Moha",
+      "inputCorreo": "moha@.com",
+      "inputContra": "1234",
+      "inputID": "1234"
+    },
+    {
+      "id": "54c5",
+      "inputNombre": "Javier Solis Retana",
+      "inputCorreo": "jaso12@gmail.com",
+      "inputContra": "1234",
+      "inputID": "1234"
+    },
+    {
+      "id": "fc85",
+      "inputNombre": "Pepe",
+      "inputCorreo": "pepinbananin@gmail.com",
+      "inputContra": "6969",
+      "inputID": "1"
+    }
+  ],
+  "consultas": [
+    {
+      "id": "8067",
+      "nombre": "michelle",
+      "tipoConsulta": "Solicitar el Desglose",
+      "consultas": "me pueden dar el desglose del proyecto",
+      "fecha": "2024-08-29",
+      "time": "13:16"
+    },
+    {
+      "id": "4183",
+      "nombre": "maria lopez ",
+      "tipoConsulta": "Llegada Tardia",
+      "consultas": "hola hoy voy a llegar tarde por que estoy pegada en una presa",
+      "fecha": "2024-08-30",
+      "time": "08:30"
+    },
+    {
+      "id": "49ba",
+      "inputNombre": "javier solis",
+      "inputCorreo": "jav@gmail.com",
+      "inputContra": "1234",
+      "inputID": "234"
+    },
+    {
+      "id": "1165",
+      "inputNombre": "wer",
+      "inputCorreo": "n@gmail.com",
+      "inputContra": "9696",
+      "inputID": "9870"
+    },
+    {
+      "id": "12b0",
+      "inputNombre": "santiago",
+      "inputCorreo": "tiago@gmail.com",
+      "inputContra": "12345",
+      "inputID": "321"
+    },
+    {
+      "id": "f135",
+      "inputNombre": "santiago",
+      "inputCorreo": "tiago@gmail.com",
+      "inputContra": "1234",
+      "inputID": "3434"
+    },
+    {
+      "id": "bb81",
+      "inputNombre": "wendy",
+      "inputCorreo": "wendy@gmail.com",
+      "inputContra": "12345",
+      "inputID": "12345"
+    },
+    {
+      "id": "6538",
+      "inputNombre": "jos",
+      "inputCorreo": "jos@gmail.com",
+      "inputContra": "1235",
+      "inputID": "12346"
+    },
+    {
+      "id": "4079",
+      "inputNombre": "jos",
+      "inputCorreo": "jos@gmail.com",
+      "inputContra": "1234",
+      "inputID": "12346"
+    },
+    {
+      "id": "927f",
+      "inputNombre": "jos",
+      "inputCorreo": "jos@gmail.com",
+      "inputContra": "123",
+      "inputID": "12346"
+    },
+    {
+      "id": "1a5c",
+      "inputNombre": "jos",
+      "inputCorreo": "jos@gmail.com",
+      "inputContra": "123",
+      "inputID": "1234"
+    },
+    {
+      "id": "ffde",
+      "inputNombre": "jos",
+      "inputCorreo": "jos@gmail.com",
+      "inputContra": "123",
+      "inputID": "1234"
+    },
+    {
+      "id": "08f8",
+      "nombre": "michelle",
+      "tipoConsulta": "Justificar Ausencia",
+      "consultas": "ya pasaron asistencia",
+      "fecha": "2024-08-30",
+      "time": "10:55"
+    }
+  ]
+>>>>>>> 8e19124f550b9b6bc1187695caaef78fd1cbccc4
 }
