@@ -4,6 +4,9 @@
     "sweetalert2": "^11.12.4"
   },
   "scripts": {
-    "start": "parcel src/html/login.html"
+    "start": "parcel src/html/registro.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0"
   }
 }
