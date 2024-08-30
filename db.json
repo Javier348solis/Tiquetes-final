@@ -38,6 +38,20 @@
       "consultas": "hola hoy voy a llegar tarde por que estoy pegada en una presa",
       "fecha": "2024-08-30",
       "time": "08:30"
+    },
+    {
+      "id": "49ba",
+      "inputNombre": "javier solis",
+      "inputCorreo": "jav@gmail.com",
+      "inputContra": "1234",
+      "inputID": "234"
+    },
+    {
+      "id": "1165",
+      "inputNombre": "wer",
+      "inputCorreo": "n@gmail.com",
+      "inputContra": "9696",
+      "inputID": "9870"
     }
   ]
 }

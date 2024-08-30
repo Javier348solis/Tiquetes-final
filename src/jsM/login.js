@@ -24,10 +24,18 @@ document.getElementById("ingresar").addEventListener("click", async (e) => {
         );
 
         if (usuarioValido) {
-            alert('Inicio de sesión exitoso!');
+            Swal.fire({
+                title: "Exito",
+                text: "Bienvenido",
+                icon: "success"
+              });
             window.location.href= "consultas.html"
         } else {
-            alert('Nombre de usuario, correo o contraseña incorrectos.');
+            Swal.fire({
+                title: "Datos incorrectos",
+                text: "Usuario no encontrado",
+                icon: "error"
+              });
         }
     } catch (error) {
         console.error('Error durante el inicio de sesión:', error);
