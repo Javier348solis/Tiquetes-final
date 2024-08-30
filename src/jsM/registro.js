@@ -1,6 +1,5 @@
 import { darDatosConsulta } from "../services/fetch";
-import Swal from 'sweetalert2/dist/sweetalert2.js'
-import 'sweetalert2/src/sweetalert2.scss'
+
 const boton1 = document.getElementById("botoncito");
 boton1.addEventListener("click", async function (e) {
     e.preventDefault();
@@ -20,7 +19,7 @@ boton1.addEventListener("click", async function (e) {
             title: "Error",
             text: "Por favor, llene todos los espacios!!",
             icon: "question"
-          });
+          });   
         return; 
     }
     const listaInput = { inputNombre, inputCorreo, inputContra, inputID };

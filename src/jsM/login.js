@@ -1,5 +1,5 @@
 import { getDatos } from "../services/fetch";
-
+alert()
 document.getElementById("ingresar").addEventListener("click", async (e) => {
     e.preventDefault();
 
@@ -42,7 +42,6 @@ document.getElementById("ingresar").addEventListener("click", async (e) => {
               });
         }
     } catch (error) {
-        console.error('Error durante el inicio de sesión:', error);
-        alert('Hubo un problema al procesar el inicio de sesión. Inténtelo de nuevo.');
+        console.error( error);
     }
 });

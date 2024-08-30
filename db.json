@@ -59,6 +59,63 @@
       "inputCorreo": "tiago@gmail.com",
       "inputContra": "12345",
       "inputID": "321"
+    },
+    {
+      "id": "f135",
+      "inputNombre": "santiago",
+      "inputCorreo": "tiago@gmail.com",
+      "inputContra": "1234",
+      "inputID": "3434"
+    },
+    {
+      "id": "bb81",
+      "inputNombre": "wendy",
+      "inputCorreo": "wendy@gmail.com",
+      "inputContra": "12345",
+      "inputID": "12345"
+    },
+    {
+      "id": "6538",
+      "inputNombre": "jos",
+      "inputCorreo": "jos@gmail.com",
+      "inputContra": "1235",
+      "inputID": "12346"
+    },
+    {
+      "id": "4079",
+      "inputNombre": "jos",
+      "inputCorreo": "jos@gmail.com",
+      "inputContra": "1234",
+      "inputID": "12346"
+    },
+    {
+      "id": "927f",
+      "inputNombre": "jos",
+      "inputCorreo": "jos@gmail.com",
+      "inputContra": "123",
+      "inputID": "12346"
+    },
+    {
+      "id": "1a5c",
+      "inputNombre": "jos",
+      "inputCorreo": "jos@gmail.com",
+      "inputContra": "123",
+      "inputID": "1234"
+    },
+    {
+      "id": "ffde",
+      "inputNombre": "jos",
+      "inputCorreo": "jos@gmail.com",
+      "inputContra": "123",
+      "inputID": "1234"
+    },
+    {
+      "id": "08f8",
+      "nombre": "michelle",
+      "tipoConsulta": "Justificar Ausencia",
+      "consultas": "ya pasaron asistencia",
+      "fecha": "2024-08-30",
+      "time": "10:55"
     }
   ]
 }

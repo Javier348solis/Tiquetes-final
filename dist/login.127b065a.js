@@ -585,6 +585,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"2PDYX":[function(require,module,exports) {
 var _fetch = require("../services/fetch");
+alert();
 document.getElementById("ingresar").addEventListener("click", async (e)=>{
     e.preventDefault();
     const nombre = document.getElementById("nombre").value.trim();
@@ -615,8 +616,7 @@ document.getElementById("ingresar").addEventListener("click", async (e)=>{
             icon: "error"
         });
     } catch (error) {
-        console.error("Error durante el inicio de sesi\xf3n:", error);
-        alert("Hubo un problema al procesar el inicio de sesi\xf3n. Int\xe9ntelo de nuevo.");
+        console.error(error);
     }
 });
 
